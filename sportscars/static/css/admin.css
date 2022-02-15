@@ -1,0 +1,30 @@
+#header{
+    background-color: #fff !important;
+    color: #ff0000 !important;
+    box-shadow: 0px 0px 5px 0px #000000
+}
+
+#header a:link, #header a:visited {
+    color: #000 !important;
+}
+
+div.breadcrumbs {
+    background-color: #000000;
+}
+
+.module h2, .module caption, .inline-group {
+    background-color: #000000;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button{
+    background-color: #000000;
+}
+.button:active, input[type=submit]:active, input[type=button], .button:focus, input[type=submit]:focus, input[type=button]:focus, button.hover, input[type=submit]:hover, input[type=button]:hover {
+    background-color: #000000;
+}
+a.deletelink {
+    --delete-button-bg: #000000;
+}
+.button.default, input[type=submit].default, .submit-row input.default {
+    --default-button-bg: #000
+}

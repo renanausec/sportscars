@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load humanize %}
+<!-- Banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Search Results</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Search</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Banner end -->
+<!-- Search box 3 start -->
+<div class="search-box-3 sb-7 bg-active">
+    <div class="container">
+        <div class="search-area-inner">
+            <div class="search-contents">
+                <form method="GET" action="{% url 'pesquisa' %}">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="marca">
+                                    <option disabled="disabled" selected="selected">Marca</option>
+                                    {% for marca in marca_pesquisa %}
+                                    <option value="{{marca}}">{{marca}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="modelo">
+                                    <option disabled="disabled" selected="selected">Modelo</option>
+                                    {% for modelo in modelo_pesquisa %}
+                                    <option value="{{modelo}}">{{modelo}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="estado">
+                                    <option disabled="disabled" selected="selected">Estado</option>
+                                    {% for estado in estado_pesquisa %}
+                                    <option value="{{estado}}">{{estado}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="ano">
+                                    <option disabled="disabled" selected="selected">Ano</option>
+                                    {% for ano in ano_pesquisa %}
+                                    <option value="{{ano}}">{{ano}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="carroceria">
+                                    <option disabled="disabled" selected="selected">Carroceria</option>
+                                    {% for carroceria in carroceria_pesquisa %}
+                                    <option value="{{carroceria}}">{{carroceria}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="transmissao">
+                                    <option disabled="disabled" selected="selected">Transmissão</option>
+                                    {% for transmissao in transmissao_pesquisa %}
+                                    <option value="{{transmissao}}">{{transmissao}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <div class="range-slider">
+                                    <div data-min="0" data-max="15000" data-unit="BRL" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <button class="btn btn-block button-theme btn-md">
+                                    <i class="fa fa-search"></i>Find
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search box 3 end -->
+
+<!-- Featured car start -->
+<div class="featured-car content-area">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>Resultado da <span>Pesquisa</span></h1>
+        </div>
+        <div class="row">
+            {% for Carro in carros %}
+            <div class="col-lg-4 col-md-6">
+                <div class="car-box">
+                    <div class="car-thumbnail">
+                        <a href="{% url 'pagina_carro' Carro.carro_url %}" class="car-img">
+                            {% if Carro.is_featured %}
+                            <div class="tag">Mais buscados</div>
+                            {% endif %}
+                            <img class="d-block w-100" src="{{ Carro.car_photo.url }}" alt="{{ Carro.seo_alt }}">
+                            <div class="facilities-list clearfix">
+                                <ul>
+                                    <li>
+                                        <span><i class="flaticon-way"></i></span>{{Carro.km | intcomma }} km
+                                    </li>
+                                    <li>
+                                        <span><i class="flaticon-calendar-1"></i></span>{{ Carro.ano }}
+                                    </li>
+                                    <li>
+                                        <span><i class="flaticon-manual-transmission"></i></span>{{ Carro.transmissao }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <div class="carbox-overlap-wrapper">
+                            <div class="overlap-box">
+                                <div class="overlap-btns-area">
+                                    <a class="overlap-btn" data-toggle="modal" data-target="#carOverviewModal">
+                                        <i class="fa fa-eye-slash"></i>
+                                    </a>
+                                    <div class="car-magnify-gallery">
+                                        <a href="{{ Carro.car_photo.url }}" class="overlap-btn">
+                                            <i class="fa fa-expand"></i>
+                                            <img class="hidden" src="{{ Carro.car_photo.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% if Carro.car_photo_1 %}
+                                        <a href="{{ Carro.car_photo_1.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_1.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                        {% if Carro.car_photo_2 %}
+                                        <a href="{{ Carro.car_photo_2.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_2.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                        {% if Carro.car_photo_3 %}
+                                        <a href="{{ Carro.car_photo_3.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_3.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                        {% if Carro.car_photo_4 %}
+                                        <a href="{{ Carro.car_photo_4.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_4.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                        {% if Carro.car_photo_5 %}
+                                        <a href="{{ Carro.car_photo_5.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_5.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                        {% if Carro.car_photo_6 %}
+                                        <a href="{{ Carro.car_photo_6.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_6.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                        {% if Carro.car_photo_7 %}
+                                        <a href="{{ Carro.car_photo_7.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_7.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                        {% if Carro.car_photo_8 %}
+                                        <a href="{{ Carro.car_photo_8.url }}" class="hidden">
+                                            <img class="hidden" src="{{ Carro.car_photo_8.url }}" alt="{{ Carro.seo_alt }}">
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <h1 class="title">
+                            <a href="car-details.html">{{Carro.carro_nome}}</a>
+                        </h1>
+                        <div class="location">
+                            <a href="car-details.html">
+                                <i class="flaticon-pin"></i> {{Carro.cidade}}, {{Carro.estado}}
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer clearfix">
+                        <div class="pull-left ratings days">
+                            <p class="cartype">{{Carro.carroceria}}</p>
+                        </div>
+                        <div class="pull-right">
+                            <p class="price">{{Carro.preco | intcomma }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Featured car end -->
+
+{% endblock %}
