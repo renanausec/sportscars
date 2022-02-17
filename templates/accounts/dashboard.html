@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %} | Minha Conta {% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Minha Conta</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="active">{{ user.first_name }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!--   Dashboard Start   -->
+
+<div class="container mt-50 mb-50">
+	{% include 'includes/messages.html' %}
+	<div class="main-title" style="text-align:left !important;">
+            <h1>Bem-vindo <span>{{ user.first_name }}</span></h1>
+            <p>Requisições Pendentes:</p>
+        </div>
+		{% if inquiries %}
+		<table class="table table-hover">
+			<thead>
+			  <tr>
+				<th scope="col">#</th>
+				<th scope="col">Carro</th>
+				<th scope="col">Localização</th>
+				<th scope="col">Ação</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{% for inquiry in inquiries %}
+			  <tr>
+				<th scope="row">1</th>
+				<td>{{inquiry.carro_nome}}</td>
+				<td>{{inquiry.cidade}}, {{inquiry.estado}}</td>
+				<td><a href="{% url 'pagina_carro' inquiry.carro_url %}" class="btn btn-outline-dark">Ver Carro</a></td>
+			  </tr>
+			  {% endfor %}
+			</tbody>
+		  </table>		
+		{% else %}
+		<h4>Você não fez nenhum pedido de aluguel ainda!</h4>
+		{% endif %}
+</div>
+
+<!--   Dashboard End   -->
+{% endblock %}

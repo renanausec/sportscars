@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% block title %} | Home {% endblock %}
 {% block content %}
 
 {% load humanize %} 
@@ -44,7 +45,7 @@
                 </div>
                 <div class="form-group">
                     <select class="form-control search-fields" name="marca">
-                        <option selected="true" disabled="disabled">Brand</option>
+                        <option selected="true" disabled="disabled">Marca</option>
                         {% for marca in marca_pesquisa %}
                         <option value='{{marca}}'>{{marca}}</option>
                         {% endfor %}
@@ -117,7 +118,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Carros <span>Destaque</span></h1>
-            <p>Mais alugados</p>
         </div>
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
@@ -231,7 +231,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Carros <span>Mais Recentes</span></h1>
-            <p>Ultimos carros adicionados no portal</p>
         </div>
         <div class="row">
             {% for Carro in all_cars %}
@@ -335,42 +334,6 @@
 <!-- Rent car end -->
 
 
-<!-- Our team start -->
-<div class="our-team content-area bg-grea-3">
-    <div class="container">
-        <!-- Main title -->
-        <div class="main-title">
-            <h1>Equipe <span>Executiva</span></h1>
-            <p>Essa é a nossa equipe</p>
-        </div>
-        <!-- Slick slider area start -->
-        <div class="slick-slider-area clearfix">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
-                {% for Equipe in equipes %}
-                <div class="slick-slide-item">
-                    <div class="team-1">
-                        <div class="photo">
-                            <a href="#">
-                                <img src="{{Equipe.photo.url}}" alt="team-1" class="img-fluid">
-                            </a>
-                            <div class="social-list clearfix">
-                                <a href="{{Equipe.facebook_link}}" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="{{Equipe.instagram_link}}" class="twitter-bg"><i class="fa fa-instagram"></i></a>
-                                <a href="{{Equipe.linkedin_link}}" class="google-bg"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4><a href="#">{{Equipe.primeiro_nome}} {{Equipe.sobrenome}}</a></h4>
-                            <h5>{{Equipe.cargo}}</h5>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Our team end -->
 
 <!-- Intro section start -->
 <div class="intro-section">
@@ -378,90 +341,14 @@
         <div class="row">
             <div class="col-lg-9 col-md-8 col-sm-12">
                 <div class="intro-text">
-                    <h3>Do You Have Questions ?</h3>
+                    <h3>Ficou dúvidas?</h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="{% url 'contato' %}" class="btn btn-md">Get in Touch</a>
+                <a href="{% url 'contato' %}" class="btn btn-md">Contato</a>
             </div>
         </div>
     </div>
 </div>
 <!-- Intro section end -->
-
-
-
-<!-- Car Overview Modal -->
-<div class="car-model-2">
-    <div class="modal fade" id="carOverviewModal" tabindex="-1" role="dialog" aria-labelledby="carOverviewModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title" id="carOverviewModalLabel">
-                        <h4>Explore Your Dream Car</h4>
-                        <h5><i class="flaticon-pin"></i> 123 Kathal St. Tampa City,</h5>
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row modal-raw">
-                        <div class="col-lg-6 modal-left">
-                            <div class="item active">
-                                <img src="img/car-13.jpg" alt="best-car" class="img-fluid modalLabel-1">
-                                <img src="img/car-14.jpg" alt="best-car" class="img-fluid modalLabel-2">
-                                <div class="sobuz">
-                                    <div class="price-box" style="padding-bottom: 5px;">
-                                        <span class="del-2">$1050.00</span>
-                                    </div>
-                                    <div class="">
-                                        <a href="#" class="btn btn-md btn-round btn-theme">Convertible</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 modal-right">
-                            <div class="modal-right-content">
-                                <section>
-                                    <h3>Features</h3>
-                                    <div class="features">
-                                        <ul class="bullets">
-                                            <li>Cruise Control</li>
-                                            <li>Airbags</li>
-                                            <li>Air Conditioning</li>
-                                            <li>Alarm System</li>
-                                            <li>Audio Interface</li>
-                                            <li>CDR Audio</li>
-                                            <li>Seat Heating</li>
-                                            <li>ParkAssist</li>
-                                        </ul>
-                                    </div>
-                                </section>
-                                <section>
-                                    <h3>Overview</h3>
-                                    <ul class="bullets">
-                                        <li>Model</li>
-                                        <li>Year</li>
-                                        <li>Condition</li>
-                                        <li>Price</li>
-                                        <li>Audi</li>
-                                        <li>2020</li>
-                                        <li>Brand New</li>
-                                        <li>$178,000</li>
-                                    </ul>
-                                </section>
-                                <div class="description">
-                                    <h3>Description</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                                    <a href="car-details.html" class="btn btn-md btn-round btn-theme">Show Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 {% endblock %}

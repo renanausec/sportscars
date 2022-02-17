@@ -1,7 +1,10 @@
 {% extends 'base.html'%}
 
+{% block title %} | {{ single_car.carro_nome }} {% endblock %}
 {% block content %}
+{%load static %}
 {% load humanize %}
+
 <!-- Sub banner start -->
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
@@ -23,6 +26,7 @@
                 <div class="car-details-section">
                     <!-- Heading start -->
                     <div class="heading-car clearfix">
+                        {% include 'includes/messages.html' %}
                         <div class="pull-left">
                             <h3>{{single_car.carro_nome}}</h3>
                             <h6>
@@ -234,45 +238,63 @@
                         <div class="modal-content">
                           <div class="contact-dealer modal-header">
                             <!-- <h5 class="modal-title" id="inquiryModalLabel">Contact Dealer</h5> -->
-                            <img src="img/logos/logo-black-white.png">
+                            <center><img src="{% static 'img/logos/logo-black-white.png' %}"></center>
                             <button type="button" class="close" data-dismiss="modal">
                               <span>&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            <form action="#">
+                            <form action="{% url 'inquiry' %}" method="POST">
+                                {% csrf_token %}
+
+                                {% if user.is_authenticated %}
+                                <input type="hidden" name="user_id" value="{{ user.id }}">
+                                {% else %}
+                                <input type="hidden" name="user_id" value="0">
+                                {% endif %}
+
+                                <input type="hidden" name="car_id" value="{{ single_car.id }}">
+                                <input type="hidden" name="carro_url" value="{{ single_car.carro_url }}">
                                 <div class="form-group">
-                                  <label for="name" class="col-form-label">Hello, My Name is</label>
+                                  <label for="name" class="col-form-label">Olá, Meu nome é</label>
                                   <div class="row">
+                                      {% if user.is_authenticated %}
                                     <div class="col">
-                                      <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                                      <input type="text" name="nome" class="form-control" value="{{user.first_name}}" readonly>
                                     </div>
                                     <div class="col">
-                                      <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+                                      <input type="text" name="sobrenome" class="form-control" value="{{user.last_name}}" readonly>
                                     </div>
+                                    {% else %}
+                                    <div class="col">
+                                        <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+                                      </div>
+                                      <div class="col">
+                                        <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" required>
+                                      </div>
+                                    {% endif %}
                                   </div>
                                 </div>
                                   <div class="form-group">
                                       <select class="form-control" id="sel1" name="customer_need">
-                                        <option value="I'm interested in this">I'm interested in this</option>
-                                        <option value="I'd like to know your best price for this">I'd like to know your best price for this</option>
-                                        <option value="I'd like to test drive this">I'd like to test drive this</option>
-                                        <option value="I'd like a history report for this">I'd like a history report for this</option>
+                                        <option value="Tenho interesse no carro">Tenho interesse no carro</option>
+                                        <option value="Tenho uma proposta">Tenho uma proposta</option>
+                                        <option value="Outra">Outra</option>
                                       </select>
                                     </div>
                                 
                                 <div class="form-group">
-                                  <input type="text" name="car_title" class="form-control" value="LAMBORGHINI HURACÁN." readonly>
+                                  <input type="text" name="carro_nome" class="form-control" value="{{ single_car.carro_nome }}" readonly>
                                 </div>
                                
                                 <div class="form-group">
-                                  <label for="name" class="col-form-label">I live in</label>
+                                  <label for="name" class="col-form-label">Eu moro em</label>
                                   <div class="row">
                                     <div class="col">
-                                      <input type="text" name="city" class="form-control" placeholder="City" required>
+                                      <input type="text" name="cidade" class="form-control" placeholder="Cidade" required>
                                     </div>
                                     <div class="col">
-                                      <input type="text" name="state" class="form-control" placeholder="State" required>
+                                      <input type="text" name="estado" class="form-control" placeholder="estado" required>
                                     </div>
                                   </div>
                                 </div>
@@ -280,22 +302,23 @@
                                 <div class="form-group">
                                   <div class="row">
                                     <div class="col">
-                                        <label for="name" class="col-form-label">You can reach me by email at</label>
-                                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                        <label for="name" class="col-form-label">Você pode me responder por e-mail</label>
+                                      <input type="email" name="email"  placeholder="E-mail" 
+                                       {% if user.is_authenticated %} value="{{user.email}}" {% endif %} class="form-control" required>
                                     </div>
                                     <div class="col">
-                                        <label for="phone" class="col-form-label">or by phone at</label>
-                                      <input type="text" name="phone" placeholder="Phone Number (optional)" class="form-control">
+                                        <label for="telefone" class="col-form-label">ou por telefone</label>
+                                      <input type="text" name="telefone" placeholder="Telefone" class="form-control" required>
                                     </div>
                                   </div>
                                 </div>
 
                                 <div class="form-group">
-                                  <label for="message" class="col-form-label">Add comments</label>
-                                  <textarea name="message" class="form-control" placeholder="Enter your message here (optional)"></textarea>
+                                  <label for="mensagem" class="col-form-label">Mensagem</label>
+                                  <textarea name="mensagem" class="form-control" placeholder="Digite sua mensagem aqui"></textarea>
                                 </div>
                                 <hr>
-                                <input type="submit" value="Send" class="btn btn-block btn-danger">
+                                <input type="submit" value="Enviar" class="btn btn-block btn-danger">
                             </form>
                           </div>
                         </div>
@@ -303,7 +326,7 @@
                     </div>
                     <!-- Question start -->
                     <div class="widget question">
-                        <h5 class="sidebar-title">Fico com dúvidas?</h5>
+                        <h5 class="sidebar-title">Ficou com dúvidas?</h5>
                         <ul class="contact-info">
                             <li>
                                 <i class="flaticon-pin"></i>BRASIL
