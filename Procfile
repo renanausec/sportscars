@@ -1,0 +1,1 @@
+web: gunicorn sportscars.wisg --log-file -
