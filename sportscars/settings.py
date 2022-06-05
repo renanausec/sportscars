@@ -163,5 +163,5 @@ SITE_ID = 1
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'renanr.ausec@gmail.com'
-EMAIL_HOST_PASSWORD = 'MagdeZinho21!'
+EMAIL_HOST_PASSWORD = 'senha'
 EMAIL_USE_TLS = True

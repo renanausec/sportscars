@@ -71,6 +71,10 @@ ul {
     color: #1c82ca !important;
 }
 
+.instagram:hover {
+    color: #ff8800 !important;
+}
+
 /** Social media bg**/
 .facebook-bg {
     background: #4867aa;
@@ -114,6 +118,11 @@ ul {
 
 .linkedin-bg:hover {
     background: #1c82ca;
+    color: #fff;
+}
+
+.instagram-bg:hover {
+    background: #ff8800;
     color: #fff;
 }
 
@@ -3821,7 +3830,7 @@ input[type=checkbox]:checked + label:before {
 
 /** Footer start **/
 footer {
-    background: #222e56;
+    background: #515151;
 }
 
 .footer ul li a{
@@ -3926,6 +3935,10 @@ footer {
     background: #56d7fe!important;
 }
 
+.footer .instagram-bg:hover {
+    background: #ff8800!important;
+}
+
 .footer .google-bg:hover {
     background: #dc4e41!important;
 }
@@ -3947,7 +3960,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-bottom: 0;
-    background: #202c54;
+    background: #515151;
     color: #fff;
 }
 
@@ -5778,6 +5791,11 @@ footer {
     color: #fff;
 }
 
+.contact-section .instagram-bg {
+    background: #ff8800;
+    color: #fff;
+}
+
 .contact-section .google-bg {
     background: #db4437;
     color: #fff;
@@ -5793,6 +5811,10 @@ footer {
 
 .contact-section .twitter-i {
     background: #0cace0;
+}
+
+.contact-section .instagram-i {
+    background: #ff8800;
 }
 
 @media (max-width: 500px) {
@@ -6050,7 +6072,8 @@ footer {
     right: 10%;
     z-index: 1;
     background: #fff;
-    border-radius: 10px;
+    opacity: 0.85;
+    border-radius: 20px;
 }
 
 .search-box-4 .search-fields {
@@ -6060,6 +6083,7 @@ footer {
     box-shadow: none;
     border: 1px solid #e0e0e0;
     background: #fff;
+
 }
 
 .search-box-4  .btn-md {
@@ -8162,13 +8186,13 @@ table {
     .hide-carat .nav-link::after {
         display: none !important;
     }
-
+/* Muda de cor e opacidade no rgba do header do menu */
     .sticky-header {
         position: fixed;
         top: 49px;
         z-index: 9999;
         width: 100%;
-        background: rgba(12,12,12,0.1);
+        background: rgba(12,12,12,0.3);
     }
 
     .mh-4{
@@ -8190,9 +8214,9 @@ table {
         top: 0px !important;
         z-index:1000;
     }
-
+/* Muda de cor e opacidade no rgba do header do topo */
     .top-header-bg{
-        background: rgba(12,12,12,0.1);
+        background: rgba(12,12,12,0.3);
         position: fixed;
         top: 0;
         z-index: 999;
@@ -8977,7 +9001,7 @@ table {
         top: 0;
         z-index: 999;
         width: 100%;
-        border-bottom: 1px solid rgba(220, 220, 220, .2)
+        border-bottom: 1px solid rgba(220, 220, 220, .2);
     }
 
     .sticky-header {
