@@ -1,1 +1,2 @@
-web: gunicorn sportscars.wsgi --log-file -
+release: python manage.py migrate
+web: gunicorn sportscars.wsgi

@@ -1,0 +1,1324 @@
+[
+{
+    "model": "contato.contato",
+    "pk": 5,
+    "fields": {
+        "nome": "Renan",
+        "sobrenome": "",
+        "car_id": 2,
+        "carro_url": "jaguar-f-pace-em-ibipora",
+        "customer_need": "Tenho interesse no carro",
+        "carro_nome": "Jaguar F-Pace",
+        "cidade": "Jataizinho",
+        "estado": "PR",
+        "email": "renanausec@gmail.com",
+        "telefone": "342342",
+        "mensagem": "EU GOSTEI DESSE CARRO, POSSO LEVAR PRA CASA?\r\n\r\nQuanto ficaria pra 3 dias?",
+        "user_id": 1,
+        "create_date": "2022-02-17T17:35:34.079Z"
+    }
+},
+{
+    "model": "contato.contato",
+    "pk": 6,
+    "fields": {
+        "nome": "Renan",
+        "sobrenome": "",
+        "car_id": 4,
+        "carro_url": "f250-super-duty-em-londrina",
+        "customer_need": "Tenho interesse no carro",
+        "carro_nome": "Ford F-250 Super Duty",
+        "cidade": "uu",
+        "estado": "uu",
+        "email": "renanausec@gmail.com",
+        "telefone": "jgu",
+        "mensagem": "ut",
+        "user_id": 1,
+        "create_date": "2022-02-18T11:13:45.706Z"
+    }
+},
+{
+    "model": "carros.carro",
+    "pk": 1,
+    "fields": {
+        "carro_nome": "Ferrari 2017",
+        "carro_url": "ferrari-2017-em-londrina",
+        "estado": "PR",
+        "cidade": "Londrina",
+        "modelo": "F80",
+        "marca": "Ferrari",
+        "ano": 2017,
+        "carroceria": "coupe",
+        "motor": "V12",
+        "transmissao": "Automática",
+        "recursos": "ParkAssist",
+        "outros_recursos": "nada mais",
+        "interior": "Caramelo",
+        "km": 10000,
+        "combustivel": "Gasolina",
+        "is_featured": false,
+        "preco": 4000,
+        "preco_promo": 3800,
+        "seo_alt": "Ferrari para Alugar",
+        "seo_meta": "É muito maquina",
+        "descricao": "<p>Ferrari Top da balada</p>",
+        "car_photo": "fotos/2022/02/14/1902536891_YBw8ZfU.jpg",
+        "car_photo_1": "fotos/2022/02/14/1902536917_AvC92wV.jpg",
+        "car_photo_2": "fotos/2022/02/14/1902537043_uf01jA7.jpg",
+        "car_photo_3": "fotos/2022/02/14/1902537077_CKcUjJ7.jpg",
+        "car_photo_4": "fotos/2022/02/14/1902537082_sT1mZeR.jpg",
+        "car_photo_5": "",
+        "car_photo_6": "",
+        "car_photo_7": "",
+        "car_photo_8": "",
+        "data_add": "2022-02-14T21:28:50Z"
+    }
+},
+{
+    "model": "carros.carro",
+    "pk": 2,
+    "fields": {
+        "carro_nome": "Jaguar F-Pace",
+        "carro_url": "jaguar-f-pace-em-ibipora",
+        "estado": "PR",
+        "cidade": "Ibiporã",
+        "modelo": "V8",
+        "marca": "Jaguar",
+        "ano": 2020,
+        "carroceria": "Coupe",
+        "motor": "V8",
+        "transmissao": "Manual",
+        "recursos": "",
+        "outros_recursos": "",
+        "interior": "Preto",
+        "km": 12000,
+        "combustivel": "Gasolina",
+        "is_featured": false,
+        "preco": 1500,
+        "preco_promo": 0,
+        "seo_alt": "Alugar Jaguar F-Pace em Ibipora",
+        "seo_meta": "Alugar Jaguar F-Pace em Ibipora",
+        "descricao": "<p>Muito louco</p>",
+        "car_photo": "fotos/2022/02/14/1902932514.jpg",
+        "car_photo_1": "fotos/2022/02/14/1902932503.jpg",
+        "car_photo_2": "fotos/2022/02/14/1902932528.jpg",
+        "car_photo_3": "fotos/2022/02/14/1902932542.jpg",
+        "car_photo_4": "",
+        "car_photo_5": "",
+        "car_photo_6": "",
+        "car_photo_7": "",
+        "car_photo_8": "",
+        "data_add": "2022-02-14T21:35:03Z"
+    }
+},
+{
+    "model": "carros.carro",
+    "pk": 3,
+    "fields": {
+        "carro_nome": "Ford Edge",
+        "carro_url": "ford-edge-2017",
+        "estado": "PR",
+        "cidade": "Jataizinho",
+        "modelo": "SRX",
+        "marca": "Ford",
+        "ano": 2017,
+        "carroceria": "SUV",
+        "motor": "V6",
+        "transmissao": "Manual",
+        "recursos": "Airbags,ParkAssist,Bluetooth Handset",
+        "outros_recursos": "",
+        "interior": "Caramelo",
+        "km": 40500,
+        "combustivel": "Gasolina",
+        "is_featured": true,
+        "preco": 4900,
+        "preco_promo": 0,
+        "seo_alt": "Alugar Ford Edge",
+        "seo_meta": "Alugar saporra",
+        "descricao": "<p>hahaha</p>",
+        "car_photo": "fotos/2022/02/15/1901478607_SRLhwdx.jpg",
+        "car_photo_1": "fotos/2022/02/15/1901478618_UhSvohw.jpg",
+        "car_photo_2": "fotos/2022/02/15/1901478646_dVzpXLC.jpg",
+        "car_photo_3": "fotos/2022/02/15/1901478672_phu0XkR.jpg",
+        "car_photo_4": "fotos/2022/02/15/1901478687_cboGlA6.jpg",
+        "car_photo_5": "",
+        "car_photo_6": "",
+        "car_photo_7": "",
+        "car_photo_8": "",
+        "data_add": "2022-02-15T10:35:11Z"
+    }
+},
+{
+    "model": "carros.carro",
+    "pk": 4,
+    "fields": {
+        "carro_nome": "Ford F-250 Super Duty",
+        "carro_url": "f250-super-duty-em-londrina",
+        "estado": "PR",
+        "cidade": "Londrina",
+        "modelo": "Super Duty",
+        "marca": "Ford",
+        "ano": 2020,
+        "carroceria": "SUV",
+        "motor": "V8",
+        "transmissao": "Automática",
+        "recursos": "",
+        "outros_recursos": "",
+        "interior": "Preto",
+        "km": 10000,
+        "combustivel": "Diesel",
+        "is_featured": true,
+        "preco": 9000,
+        "preco_promo": 0,
+        "seo_alt": "Super Duty",
+        "seo_meta": "Alugar saporra mano",
+        "descricao": "<p>asad</p>",
+        "car_photo": "fotos/2022/02/15/1894300894_SzfV4L8.jpg",
+        "car_photo_1": "fotos/2022/02/15/1894300905_zf8Vkdb.jpg",
+        "car_photo_2": "fotos/2022/02/15/1894300920_S1jERI2.jpg",
+        "car_photo_3": "fotos/2022/02/15/1900155012_PYG0ILu.jpg",
+        "car_photo_4": "fotos/2022/02/15/1900155133_OKIiIPW.jpg",
+        "car_photo_5": "",
+        "car_photo_6": "",
+        "car_photo_7": "",
+        "car_photo_8": "",
+        "data_add": "2022-02-15T10:38:13Z"
+    }
+},
+{
+    "model": "carros.carro",
+    "pk": 5,
+    "fields": {
+        "carro_nome": "Toyota 4Runner",
+        "carro_url": "toyota-4runner-2021",
+        "estado": "PR",
+        "cidade": "Maringá",
+        "modelo": "Altis",
+        "marca": "Toyota",
+        "ano": 2021,
+        "carroceria": "SUV",
+        "motor": "V8",
+        "transmissao": "Automática",
+        "recursos": "Airbags,Camera de Ré",
+        "outros_recursos": "",
+        "interior": "Preto",
+        "km": 5000,
+        "combustivel": "Gasolina",
+        "is_featured": true,
+        "preco": 1200,
+        "preco_promo": 1100,
+        "seo_alt": "Fodona",
+        "seo_meta": "Loucuura",
+        "descricao": "<p>Esse carro &eacute; pica demais</p>",
+        "car_photo": "fotos/2022/02/15/1893633875.jpg",
+        "car_photo_1": "fotos/2022/02/15/1893633884.jpg",
+        "car_photo_2": "",
+        "car_photo_3": "",
+        "car_photo_4": "",
+        "car_photo_5": "",
+        "car_photo_6": "",
+        "car_photo_7": "",
+        "car_photo_8": "",
+        "data_add": "2022-02-15T10:47:28Z"
+    }
+},
+{
+    "model": "pages.equipe",
+    "pk": 1,
+    "fields": {
+        "primeiro_nome": "Renan",
+        "sobrenome": "Ausec",
+        "cargo": "CEO",
+        "photo": "fotos/2022/02/14/COO-Renan-Ausec_edit.jpeg",
+        "facebook_link": "https://www.facebook.com/renan.ausec",
+        "instagram_link": "https://www.facebook.com/renan.ausec",
+        "linkedin_link": "https://www.facebook.com/renan.ausec",
+        "data_cadastro": "2022-02-14T18:08:04.805Z"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$0jgC1hXhmKtSGdlV57Smyd$/6Xbd977iVXb/VvAnEH7ZY6q5CTMwwn+lrxtA2d61Mg=",
+        "last_login": "2022-02-17T13:29:51.955Z",
+        "is_superuser": true,
+        "username": "renanausec",
+        "first_name": "Renan",
+        "last_name": "",
+        "email": "renanausec@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-02-14T17:42:48Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$CLB9Jt11muKXPyLh8QBXJ9$/9l3hwM+Ar59GKRVdbEqDpzUgVCM9WSPWj1pTbcG2Ns=",
+        "last_login": "2022-02-16T14:17:06.237Z",
+        "is_superuser": false,
+        "username": "mano@mano",
+        "first_name": "mano",
+        "last_name": "mano",
+        "email": "mmano@mano",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-02-16T14:17:06.144Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!P5zu6QroDr6J78uadW6Ef0QgEd4xGEfsmsmhzkAT",
+        "last_login": "2022-02-17T13:30:18Z",
+        "is_superuser": false,
+        "username": "renan",
+        "first_name": "Renan",
+        "last_name": "Ausec",
+        "email": "renansssausec@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-02-16T15:39:25Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!n4ZFCT3QmN5FnoNgNES4IM4Gr3fdFZrpBToltE4z",
+        "last_login": "2022-02-17T11:35:59Z",
+        "is_superuser": false,
+        "username": "renan9",
+        "first_name": "Renan",
+        "last_name": "Ausec",
+        "email": "lololo@doasd.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-02-17T11:35:59Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0po6wp1zhz1ix7laie90jfnzn31cvh34",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAKjIJL956BDDODVA1NSrsy3l2bdKHb_977L5VwXWpau8xpZHVWgzr8bhnpIW0DfMd2mzRNbZnHrDdF77Tr68TyvOzu30HFXr81IBhPbI0pXDJFCjCEgOiJRMAiB1ciRFccWInmBHSUYqyPGTwW49T7A_ozODM:1nKgr1:KIlYR_U6GZ2AxGqr5l1NG1DMgMfVoHZdo43ZtCt7SJI",
+        "expire_date": "2022-03-03T13:29:51.956Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "19rjqwb56rrtdvmw2bv36vc9otlhpyap",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAKjIJL956BDDODVA1NSrsy3l2bdKHb_977L5VwXWpau8xpZHVWgzr8bhnpIW0DfMd2mzRNbZnHrDdF77Tr68TyvOzu30HFXr81IBhPbI0pXDJFCjCEgOiJRMAiB1ciRFccWInmBHSUYqyPGTwW49T7A_ozODM:1nJfa3:Ezje2e5-b5VUZD1h-ZN-FeTkwzK6q8U96PzAuaU3Wpg",
+        "expire_date": "2022-02-28T17:56:07.414Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "quzo9abw6ydri6wurh20t4hjguifxcc8",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAURO_C2hDglwIu3fcM5AMfqRqalHZlvLs06UJ3k5k378087lvxe6PVz4ldGbDLbxcwPqkeQ3pgvS88LnVb58APhJ9r49OS6HU72T9BwVb6e6AoiJwYAzlwBg3ppEFCtuiiggyDGzMFkcDKnlB3tXUqGKuSkZHY5wvyMzhN:1nKMQV:yVpn8FlGDw0FMuSCC2SkknYlpbMkRSNqXNwCFwwj_sA",
+        "expire_date": "2022-03-02T15:41:07.267Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yjoleol5aznbbypwtrfrhjpnkit2s619",
+    "fields": {
+        "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sIjF0Y0RMSVdTT0F1MSJdfQ:1nKf43:7hVSmvC3qwMbGg2_tUIE-xggxEpUCqY9tyiQ3Ls5WuU",
+        "expire_date": "2022-03-03T11:35:11.449Z"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "localhost:8000",
+        "name": "localhost:8000"
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+        "provider": "facebook",
+        "name": "Facebook Login",
+        "client_id": "1077689563012512",
+        "secret": "03b67dee37fcef5f9b184970c51b6ac7",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 2,
+    "fields": {
+        "provider": "google",
+        "name": "Google Login",
+        "client_id": "429650370442-q42d7ftqed1ctcc52usl4nh5c75k3mav.apps.googleusercontent.com",
+        "secret": "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",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "renan"
+        ],
+        "provider": "facebook",
+        "uid": "10227720016367080",
+        "last_login": "2022-02-17T13:29:11.598Z",
+        "date_joined": "2022-02-16T15:39:25.833Z",
+        "extra_data": "{\"id\": \"10227720016367080\", \"name\": \"Renan Ausec\", \"first_name\": \"Renan\", \"last_name\": \"Ausec\"}"
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "renan9"
+        ],
+        "provider": "google",
+        "uid": "112396749530730056197",
+        "last_login": "2022-02-17T11:35:59.771Z",
+        "date_joined": "2022-02-17T11:35:59.771Z",
+        "extra_data": "{\"id\": \"112396749530730056197\", \"name\": \"Renan Ausec\", \"given_name\": \"Renan\", \"family_name\": \"Ausec\", \"picture\": \"https://lh3.googleusercontent.com/a-/AOh14Ghh0Er9qa5rk1cfI-Ap5s-F0GuQ4z0OFcus8w569g=s96-c\", \"locale\": \"pt-BR\"}"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-02-14T17:45:47.308Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "renanausec",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-02-14T18:08:04.806Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "1",
+        "object_repr": "Team object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-02-14T18:08:44.767Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "1",
+        "object_repr": "Team object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-02-14T18:09:53.684Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "1",
+        "object_repr": "Renan",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-02-14T18:10:11.332Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "1",
+        "object_repr": "Renan",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-02-14T18:15:22.688Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "1",
+        "object_repr": "Renan",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-02-14T18:15:27.474Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "1",
+        "object_repr": "Renan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-02-14T18:17:19.615Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "2",
+        "object_repr": "Irineu",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-02-14T18:17:41.728Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "3",
+        "object_repr": "Guilherme",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-02-14T18:18:18.046Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "2",
+        "object_repr": "Samuel",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Primeiro nome\", \"Sobrenome\", \"Cargo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-02-14T18:18:23.076Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "3",
+        "object_repr": "Guilherme",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Cargo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-02-14T21:34:14.329Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "1",
+        "object_repr": "Carro object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-02-14T21:36:16.488Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "2",
+        "object_repr": "Carro object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-02-14T22:07:18.066Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "2",
+        "object_repr": "Jaguar F-Pace",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-02-14T23:03:15.482Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "2",
+        "object_repr": "Jaguar F-Pace",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Preco\", \"Seo alt\", \"Seo meta\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2022-02-14T23:03:37.938Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "1",
+        "object_repr": "Ferrari 2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Preco\", \"Preco promo\", \"Seo alt\", \"Seo meta\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2022-02-15T10:37:41.218Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "3",
+        "object_repr": "Ford Edge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2022-02-15T10:39:40.376Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "4",
+        "object_repr": "Ford F-250 Super Duty",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2022-02-15T10:40:02.649Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "4",
+        "object_repr": "Ford F-250 Super Duty",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2022-02-15T10:48:44.605Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2022-02-15T10:48:47.648Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2022-02-15T10:48:49.773Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "2",
+        "object_repr": "Jaguar F-Pace",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2022-02-15T10:48:49.777Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "1",
+        "object_repr": "Ferrari 2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2022-02-15T11:30:18.764Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2022-02-15T11:30:24.027Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "4",
+        "object_repr": "Ford F-250 Super Duty",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2022-02-15T11:30:28.049Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "3",
+        "object_repr": "Ford Edge",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2022-02-15T11:30:37.980Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "2",
+        "object_repr": "Jaguar F-Pace",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Carro url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2022-02-15T11:30:46.199Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "1",
+        "object_repr": "Ferrari 2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Carro url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2022-02-15T16:12:35.735Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Modelo\", \"Marca\", \"Recursos\", \"Seo meta\", \"Descricao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2022-02-15T16:14:27.550Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmissao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2022-02-15T16:14:32.762Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "4",
+        "object_repr": "Ford F-250 Super Duty",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmissao\", \"Recursos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2022-02-15T16:14:38.429Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "3",
+        "object_repr": "Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmissao\", \"Recursos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2022-02-15T16:14:47.499Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "2",
+        "object_repr": "Jaguar F-Pace",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Marca\", \"Transmissao\", \"Recursos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2022-02-15T16:15:06.368Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "4",
+        "object_repr": "Ford F-250 Super Duty",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Marca\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2022-02-15T16:15:14.646Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "3",
+        "object_repr": "Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Marca\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2022-02-15T16:15:22.443Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "2",
+        "object_repr": "Jaguar F-Pace",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2022-02-15T16:15:31.174Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "1",
+        "object_repr": "Ferrari 2017",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Marca\", \"Transmissao\", \"Recursos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2022-02-15T18:15:05.886Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2022-02-15T18:15:10.745Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2022-02-15T18:16:06.921Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "carros",
+            "carro"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2022-02-16T15:17:22.565Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "Facebook Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2022-02-16T15:34:49.753Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1",
+        "object_repr": "localhost:8000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2022-02-17T11:32:10.452Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "2",
+        "object_repr": "Google Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2022-02-17T13:30:20.329Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "renan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\", \"Last login\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2022-02-17T13:30:32.876Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "renan9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2022-02-17T17:34:04.862Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "contato",
+            "contato"
+        ],
+        "object_id": "4",
+        "object_repr": "Contato object (4)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2022-02-17T17:34:09.048Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "contato",
+            "contato"
+        ],
+        "object_id": "3",
+        "object_repr": "Contato object (3)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2022-02-17T17:34:09.050Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "contato",
+            "contato"
+        ],
+        "object_id": "2",
+        "object_repr": "Contato object (2)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2022-02-17T17:34:09.051Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "contato",
+            "contato"
+        ],
+        "object_id": "1",
+        "object_repr": "Contato object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2022-02-17T18:46:03.043Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "3",
+        "object_repr": "Guilherme",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2022-02-17T18:46:03.045Z",
+        "user": [
+            "renanausec"
+        ],
+        "content_type": [
+            "pages",
+            "equipe"
+        ],
+        "object_id": "2",
+        "object_repr": "Samuel",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
