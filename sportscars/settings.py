@@ -90,21 +90,21 @@ WSGI_APPLICATION = 'sportscars.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'sportscars_db',
-        'USER': 'renanausec',
-        'PASSWORD': 'xtrt2103',
-        'HOST': 'localhost',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         dj_database_url.config(default='postgres:postgres:xtrt2103@localhost/sportscars')
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'sportscars_db',
+#         'USER': 'renanausec',
+#         'PASSWORD': 'xtrt2103',
+#         'HOST': 'localhost',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        dj_database_url.config(default='postgres:postgres:xtrt2103@localhost/sportscars')
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
