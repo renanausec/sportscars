@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-omvh&h748(3#x+%b#rl4h0j4-=xhsuo+kqo*ae_t2r$#zb$d$m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+    DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'sportscars.urls'
@@ -88,16 +90,21 @@ WSGI_APPLICATION = 'sportscars.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'sportscars_db',
+#         'USER': 'renanausec',
+#         'PASSWORD': 'xtrt2103',
+#         'HOST': 'localhost',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'sportscars_db',
-        'USER': 'renanausec',
-        'PASSWORD': 'xtrt2103',
-        'HOST': 'localhost',
+        dj_database_url.config(default='postgres:postgres:xtrt2103@localhost/sportscars')
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -165,3 +172,6 @@ EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'renanr.ausec@gmail.com'
 EMAIL_HOST_PASSWORD = 'senha'
 EMAIL_USE_TLS = True
+
+#whitenoise settings
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
