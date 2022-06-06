@@ -1,1 +1,1 @@
-web: gunicorn sportscars.wisg --log-file -
+web: gunicorn sportscars.wsgi --log-file -
