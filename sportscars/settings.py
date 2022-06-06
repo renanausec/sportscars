@@ -55,6 +55,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -165,3 +166,6 @@ EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'renanr.ausec@gmail.com'
 EMAIL_HOST_PASSWORD = 'senha'
 EMAIL_USE_TLS = True
+
+#whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

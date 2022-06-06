@@ -17,7 +17,7 @@ class Contato(models.Model):
     telefone = models.CharField(max_length=100)
     mensagem = models.TextField(blank=True)
     user_id = models.IntegerField()
-    create_date = models.DateTimeField(blank=True, default=datetime.now )
+    create_date = models.DateTimeField(blank=True, default=datetime.now)
 
 def __str__(self):
     return self.email
