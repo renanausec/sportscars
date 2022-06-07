@@ -1,15 +1,16 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %} | Pesquisa de carros esportivos e luxuosos para alugar! {% endblock %}
 {% block content %}
 {% load humanize %}
+
 <!-- Banner start -->
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
         <div class="breadcrumb-areas">
             <h1>Search Results</h1>
             <ul class="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li class="active">Search</li>
             </ul>
         </div>
@@ -197,10 +198,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">{{Carro.carro_nome}}</a>
+                            <a href="{% url 'pagina_carro' Carro.carro_url %}">{{Carro.carro_nome}}</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href="{% url 'pagina_carro' Carro.carro_url %}">
                                 <i class="flaticon-pin"></i> {{Carro.cidade}}, {{Carro.estado}}
                             </a>
                         </div>
