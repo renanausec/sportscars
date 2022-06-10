@@ -5,7 +5,7 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 def carros(request):
     carros = Carro.objects.order_by('-data_add')
-    paginator = Paginator(carros, 2)
+    paginator = Paginator(carros, 4)
     page = request.GET.get('page')
     carros_paginados = paginator.get_page(page)
 
