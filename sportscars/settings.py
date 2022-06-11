@@ -94,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'sportscars_db',
         'USER': 'renanausec',
-        'PASSWORD': 'xtrt2103',
+        'PASSWORD': '',
         'HOST': 'localhost',
     }
 }
@@ -162,10 +162,10 @@ SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #Email sending
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'renanr.ausec@gmail.com'
-EMAIL_HOST_PASSWORD = 'MagdeZinho21!'
+EMAIL_HOST = ''
+EMAIL_PORT =
+EMAIL_HOST_USER = 'contato@sportscars.com'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 #whitenoise
