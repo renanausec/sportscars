@@ -163,7 +163,6 @@ SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #Email sending
 EMAIL_HOST = ''
-EMAIL_PORT =
 EMAIL_HOST_USER = 'contato@sportscars.com'
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
