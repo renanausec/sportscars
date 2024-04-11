@@ -173,5 +173,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #liberar o csrf para o domínio
 CSRF_TRUSTED_ORIGINS = [
-    'sportscars.com.br',
+    'https://sportscars.com.br',
 ]
