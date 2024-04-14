@@ -64,7 +64,7 @@ def contato(request):
                 messages.error(request, "Você já enviou este pedido! Favor aguarde até um de nossos atendentes entrar em contato.")
                 return redirect('/contato')
 
-        contato = Contato(user_id=user_id, email=email, telefone=telefone, assunto=assunto, mensagem=mensagem)
+        contato = Contato(user_id=user_id, nome=nome, email=email, telefone=telefone, assunto=assunto, mensagem=mensagem)
         contato.save()
         messages.success(request, 'Sua mensagem foi enviada com sucesso! Entraremos em contato assim que possível.')
         return redirect('/contato')
