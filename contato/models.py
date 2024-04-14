@@ -26,7 +26,7 @@ class Contato(models.Model):
     nome = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     telefone = models.CharField(max_length=100)
-    assunto = models.CharField(max_length=200)
+    assunto = models.CharField(max_length=200, default='Assunto Padrão')
     mensagem = models.TextField(blank=True)
     user_id = models.IntegerField()
     create_date = models.DateTimeField(blank=True, default=datetime.now)
