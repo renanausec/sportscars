@@ -29,7 +29,7 @@ def inquiry(request):
                 messages.error(request, "Você já enviou este pedido! Favor aguarde até um de nossos atendentes entrar em contato.")
                 return redirect('../carros/'+carro_url)
 
-        inq = Contato(user_id=user_id, car_id=car_id, carro_url=carro_url, carro_nome=carro_nome, nome=nome, sobrenome=sobrenome,
+        inq = Inquiry(user_id=user_id, car_id=car_id, carro_url=carro_url, carro_nome=carro_nome, nome=nome, sobrenome=sobrenome,
         customer_need=customer_need, cidade=cidade, estado=estado, email=email, telefone=telefone, mensagem=mensagem)
 
         # admin_info = User.objects.get(is_superuser=True)
