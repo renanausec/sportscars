@@ -32,16 +32,16 @@ def inquiry(request):
         contato = Contato(user_id=user_id, car_id=car_id, carro_url=carro_url, carro_nome=carro_nome, nome=nome, sobrenome=sobrenome,
         customer_need=customer_need, cidade=cidade, estado=estado, email=email, telefone=telefone, mensagem=mensagem)
 
-        admin_info = User.objects.get(is_superuser=True)
-        admin_email = admin_info.email
+        # admin_info = User.objects.get(is_superuser=True)
+        # admin_email = admin_info.email
 
-        send_mail(
-            'Nova Inquiry - SportsCars',
-            'Você recebeu uma nova Inquiry para o carro: ' + carro_nome + '. Por favor, faça seu login na area do Admin e veja mais detalhes.',
-            'renanr.ausec@gmail.com',
-            [admin_email],
-            fail_silently=False
-        )
+        # send_mail(
+        #     'Nova Inquiry - SportsCars',
+        #     'Você recebeu uma nova Inquiry para o carro: ' + carro_nome + '. Por favor, faça seu login na area do Admin e veja mais detalhes.',
+        #     'renanr.ausec@gmail.com',
+        #     [admin_email],
+        #     fail_silently=False
+        # )
 
         contato.save()
         messages.success(request, 'Sua mensagem foi enviada com sucesso! Entraremos em contato assim que possível.')
