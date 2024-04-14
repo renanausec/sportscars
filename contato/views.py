@@ -47,24 +47,42 @@ def inquiry(request):
         messages.success(request, 'Sua mensagem foi enviada com sucesso! Entraremos em contato assim que possível.')
         return redirect('../carros/'+carro_url)
     
+import logging
+
+# Inicialize o logger
+logger = logging.getLogger(__name__)
+
 def contato(request):
     if request.method == 'POST':
-        user_id = request.POST['user_id']
-        nome = request.POST['nome']
-        email = request.POST['email']
-        telefone = request.POST['telefone']
-        assunto = request.POST['assunto']
-        mensagem = request.POST['mensagem']
-        user_id = request.POST['user_id']
+        logger.debug('Recebida uma solicitação POST para a view contato')
 
-        if request.user.is_authenticated:
-            user_id = request.user.id
-            has_contacted = Contato.objects.all().filter(user_id=user_id)
-            if has_contacted:
-                messages.error(request, "Você já enviou este pedido! Favor aguarde até um de nossos atendentes entrar em contato.")
-                return redirect('/contato')
+        try:
+            user_id = request.POST['user_id']
+            nome = request.POST['nome']
+            email = request.POST['email']
+            telefone = request.POST['telefone']
+            assunto = request.POST['assunto']
+            mensagem = request.POST['mensagem']
+            
+            logger.debug(f'Campos do formulário: nome={nome}, email={email}, telefone={telefone}, assunto={assunto}, mensagem={mensagem}')
 
-        contato = Contato(user_id=user_id, nome=nome, email=email, telefone=telefone, assunto=assunto, mensagem=mensagem)
-        contato.save()
-        messages.success(request, 'Sua mensagem foi enviada com sucesso! Entraremos em contato assim que possível.')
-        return redirect('/contato')
+            if request.user.is_authenticated:
+                user_id = request.user.id
+                logger.debug(f'Usuário autenticado com ID: {user_id}')
+
+                has_contacted = Contato.objects.filter(user_id=user_id).exists()
+                if has_contacted:
+                    messages.error(request, "Você já enviou este pedido! Favor aguarde até um de nossos atendentes entrar em contato.")
+                    logger.debug('Usuário já enviou um contato. Redirecionando de volta para a página de contato.')
+                    return redirect('/contato')
+
+            contato = Contato(user_id=user_id, nome=nome, email=email, telefone=telefone, assunto=assunto, mensagem=mensagem)
+            contato.save()
+            logger.debug('Dados de contato salvos com sucesso no banco de dados.')
+            messages.success(request, 'Sua mensagem foi enviada com sucesso! Entraremos em contato assim que possível.')
+            return redirect('/contato')
+
+        except Exception as e:
+            logger.error(f'Ocorreu um erro ao processar a solicitação de contato: {e}')
+            messages.error(request, 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.')
+            return redirect('/contato')
