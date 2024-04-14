@@ -68,3 +68,7 @@ def contato(request):
         contato.save()
         messages.success(request, 'Sua mensagem foi enviada com sucesso! Entraremos em contato assim que possível.')
         return redirect('/contato')
+    
+    else:
+        # Se a solicitação não for POST, renderize o template de contato
+        return render(request, 'contato.html')
