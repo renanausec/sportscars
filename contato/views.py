@@ -71,4 +71,4 @@ def contato(request):
     
     else:
         # Se a solicitação não for POST, renderize o template de contato
-        return render(request, 'contato.html')
+        return render(request, 'pages/contato.html')
