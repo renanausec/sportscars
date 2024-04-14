@@ -4,7 +4,7 @@ from datetime import datetime
 
 # Create your models here.
 
-class Contato(models.Model):
+class Inquiry(models.Model):
     nome = models.CharField(max_length=100)
     sobrenome = models.CharField(max_length=100)
     car_id = models.IntegerField()
@@ -15,6 +15,18 @@ class Contato(models.Model):
     estado = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     telefone = models.CharField(max_length=100)
+    mensagem = models.TextField(blank=True)
+    user_id = models.IntegerField()
+    create_date = models.DateTimeField(blank=True, default=datetime.now)
+
+def __str__(self):
+    return self.email
+
+class Contato(models.Model):
+    nome = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    telefone = models.CharField(max_length=100)
+    assunto = models.CharField(max_length=200)
     mensagem = models.TextField(blank=True)
     user_id = models.IntegerField()
     create_date = models.DateTimeField(blank=True, default=datetime.now)
